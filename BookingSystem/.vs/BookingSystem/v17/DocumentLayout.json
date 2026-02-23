@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\course\\Booking\\BookingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49F020F9-3443-4C4F-8D4F-EF443458F659}|BookingSystem.Domain\\BookingSystem.Domain.csproj|d:\\course\\booking\\bookingsystem\\bookingsystem.domain\\bookingsystem.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{49F020F9-3443-4C4F-8D4F-EF443458F659}|BookingSystem.Domain\\BookingSystem.Domain.csproj|solutionrelative:bookingsystem.domain\\bookingsystem.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{818AE80E-6CB7-4C80-A55D-8133FF1BC268}|BookingSystem.API\\BookingSystem.API.csproj|d:\\course\\booking\\bookingsystem\\bookingsystem.api\\bookingsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{818AE80E-6CB7-4C80-A55D-8133FF1BC268}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\bookingsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21FE5E82-B4B2-4B04-A9A7-134AB4808CC1}|BookingSystem.Application\\BookingSystem.Application.csproj|d:\\course\\booking\\bookingsystem\\bookingsystem.application\\bookingsystem.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{21FE5E82-B4B2-4B04-A9A7-134AB4808CC1}|BookingSystem.Application\\BookingSystem.Application.csproj|solutionrelative:bookingsystem.application\\bookingsystem.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{818AE80E-6CB7-4C80-A55D-8133FF1BC268}|BookingSystem.API\\BookingSystem.API.csproj|d:\\course\\booking\\bookingsystem\\bookingsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{818AE80E-6CB7-4C80-A55D-8133FF1BC268}|BookingSystem.API\\BookingSystem.API.csproj|solutionrelative:bookingsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingSystem.Domain",
+              "DocumentMoniker": "D:\\course\\Booking\\BookingSystem\\BookingSystem.Domain\\BookingSystem.Domain.csproj",
+              "RelativeDocumentMoniker": "BookingSystem.Domain\\BookingSystem.Domain.csproj",
+              "ToolTip": "D:\\course\\Booking\\BookingSystem\\BookingSystem.Domain\\BookingSystem.Domain.csproj",
+              "RelativeToolTip": "BookingSystem.Domain\\BookingSystem.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-23T00:58:02.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingSystem.API",
+              "DocumentMoniker": "D:\\course\\Booking\\BookingSystem\\BookingSystem.API\\BookingSystem.API.csproj",
+              "RelativeDocumentMoniker": "BookingSystem.API\\BookingSystem.API.csproj",
+              "ToolTip": "D:\\course\\Booking\\BookingSystem\\BookingSystem.API\\BookingSystem.API.csproj",
+              "RelativeToolTip": "BookingSystem.API\\BookingSystem.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-23T00:56:49.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingSystem.Application",
+              "DocumentMoniker": "D:\\course\\Booking\\BookingSystem\\BookingSystem.Application\\BookingSystem.Application.csproj",
+              "RelativeDocumentMoniker": "BookingSystem.Application\\BookingSystem.Application.csproj",
+              "ToolTip": "D:\\course\\Booking\\BookingSystem\\BookingSystem.Application\\BookingSystem.Application.csproj",
+              "RelativeToolTip": "BookingSystem.Application\\BookingSystem.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-23T00:55:36.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\course\\Booking\\BookingSystem\\BookingSystem.API\\appsettings.json",
+              "RelativeDocumentMoniker": "BookingSystem.API\\appsettings.json",
+              "ToolTip": "D:\\course\\Booking\\BookingSystem\\BookingSystem.API\\appsettings.json",
+              "RelativeToolTip": "BookingSystem.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-23T00:48:08.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
