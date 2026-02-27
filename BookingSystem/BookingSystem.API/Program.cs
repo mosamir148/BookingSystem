@@ -1,7 +1,10 @@
+using BookingSystem.Application;
 using BookingSystem.Application.Irepo;
 using BookingSystem.Application.Services;
+using BookingSystem.Infrastructure;
 using BookingSystem.Infrastructure.Persistence;
 using BookingSystem.Infrastructure.repo;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookingSystem.API
@@ -15,13 +18,11 @@ namespace BookingSystem.API
             // Add services to the container.
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            builder.Services.AddScoped<IBookingRepository, BookingRepository>();
-            builder.Services.AddScoped<BookingService>();
+            builder.Services.AddFluentValidationAutoValidation();
 
-            builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
-            builder.Services.AddScoped<ServiceService>();
+            builder.Services.AddInfraStracture().AddApplicationService();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

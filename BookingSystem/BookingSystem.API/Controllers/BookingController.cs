@@ -1,4 +1,5 @@
 ﻿using BookingSystem.Application.Dtos;
+using BookingSystem.Application.Services;
 using BookingSystem.Domain.Entites;
 using BookingSystem.Domain.Enum;
 using BookingSystem.Infrastructure.Persistence;
@@ -8,48 +9,27 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookingSystem.API.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class BookingController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly BookingService _bookingService;
 
-        public BookingController(ApplicationDbContext context)
+        public BookingController(BookingService bookingService)
         {
-            _context = context;
+            _bookingService = bookingService;
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateBooking(CreateBookingRequest request)
         {
-            // 1️⃣ نتأكد إن الـ TimeSlot موجود
-            var timeSlot = await _context.TimeSlots
-                .FirstOrDefaultAsync(t => t.Id == request.TimeSlotId);
+            var result = await _bookingService.CreateBookingAsync(request);
 
-            if (timeSlot == null)
-                return NotFound("TimeSlot not found");
+            if (result.Contains("not found") || result.Contains("already booked"))
+                return BadRequest(result);
 
-            // 2️⃣ نتأكد إنه مش محجوز
-            if (timeSlot.IsBooked)
-                return BadRequest("This TimeSlot is already booked");
-
-            // 3️⃣ نعمل Booking جديد
-            var booking = new Booking
-            {
-                CustomerId = request.CustomerId,
-                ServiceId = request.ServiceId,
-                TimeSlotId = request.TimeSlotId,
-                Status = BookingStatus.Confirmed
-            };
-
-            // 4️⃣ نغير حالة الـ TimeSlot
-            timeSlot.IsBooked = true;
-
-            // 5️⃣ نحفظ في الداتا بيز
-            _context.Bookings.Add(booking);
-            await _context.SaveChangesAsync();
-
-            return Ok("Booking created successfully");
+            return Ok(result);
         }
     }
 }
+
